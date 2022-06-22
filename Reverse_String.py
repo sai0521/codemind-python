@@ -1,4 +1,4 @@
-def rev(n):
-    return n[::-1]
 n=input()
-print(rev(n))
+m=n.split(" ")
+m.reverse()
+print(*m)
