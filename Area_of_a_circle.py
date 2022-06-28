@@ -1,2 +1,2 @@
-a=int(input())
-print(round(3.14*a*a,2))
+n=int(input())
+print("{:.2f}".format((3.14)*n**2))
