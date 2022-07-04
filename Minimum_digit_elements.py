@@ -1,11 +1,11 @@
 n=int(input())
-a=list(map(int,input().split()))
-m=min(a)
+l=list(map(int,input().split()))
+m=min(l)
 import math
-l=int(math.log10(m))+1
-c=0
-for i in a:
-    len=int(math.log10(i))+1
-    if len==l:
-        c+=1
-print(c)
+c=int(math.log10(m))+1
+c1=0
+for i in l:
+    x=int(math.log10(i))+1
+    if x==c:
+        c1+=1
+print(c1)
