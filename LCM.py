@@ -1,5 +1,11 @@
 n,m=map(int,input().split())
-for i in range(1,n*m+1):
-    if i%n==0 and i%m==0:
-        print(i)
+if n>m:
+    x=n
+else:
+    x=m
+while 1:
+    if x%n==0 and x%m==0:
+        print(x)
         break
+    x+=1
+    
