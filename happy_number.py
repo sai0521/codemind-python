@@ -1,22 +1,17 @@
-def happy(n):
-    import math
+def happy(x):
     s=0
-    while n:
-        m=n%10
-        n=n//10
-        s=s+m**2
-    l=int(math.log10(s))+1
-    if l==1 and s!=1:
-        return 0
-    elif l==1 and s==1:
-        return 1
+    while x:
+        y=x%10
+        x//=10
+        s+=pow(y,2)
+    if s<=9:
+        return s
     else:
         return happy(s)
-        
 
 n=int(input())
 m=happy(n)
-if m==1:
-    print('True')
+if m==1 or m==7:
+    print("True")
 else:
-    print('False')
+    print("False")
