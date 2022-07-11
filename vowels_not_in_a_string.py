@@ -1,15 +1,12 @@
 n=input()
-c=0
-m=[]
-s=[]
+m=""
 for i in n:
-    if i in "aeiou":
-        m.append(i)
-for j in "aeiou":
-    if j not in m:
-        c+=1
-        s.append(j)
+    if i in 'aeiou':
+        m+=i
+        c=0
+for i in 'aeiou':
+    if i not in m:
+        print(i,end=" ")
+        c=1
 if c==0:
     print(0)
-else:
-    print(*s)
