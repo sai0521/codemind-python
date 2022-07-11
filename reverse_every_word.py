@@ -1,4 +1,5 @@
 n=input()
-n=n.split()
+n=n.split(" ")
 for i in n:
-    print(i[::-1],end=" ")
+    m=i[::-1]
+    print(m,end=" ")
