@@ -1,8 +1,7 @@
-a=input()
-b=a[ : :-1]
-a=a.capitalize()
-b=b.capitalize()
-if a==b:
-    print('True')
+n=input()
+n=n.lower()
+m=n[::-1]
+if n==m:
+    print("True")
 else:
-    print('False')
+    print("False")
