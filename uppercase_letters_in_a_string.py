@@ -1,6 +1,6 @@
 n=input()
 c=0
 for i in n:
-    if i>='A' and i<='Z':
+    if ord(i)>=65 and ord(i)<=90:
         c+=1
 print(c)
