@@ -1,31 +1,31 @@
+def palin(p):
+    q=p
+    rev=0
+    while q:
+        w=q%10
+        q=q//10
+        rev=rev*10+w
+        
+    if rev==p:
+        return 1
+    else:
+        return 0
+
 def prime(x):
-    if x==1:
+    if x==1 or x==0:
         return 0
     for i in range(2,int(x**0.5)+1):
         if x%i==0:
             return 0
     return 1
-
-def palin(a):
-    r=0
-    b=a
-    while b:
-        c=b%10
-        b//=10
-        r=r*10+c
-    if r==a:
-        return 1
-    else:
-        return 0
-
-
-
+    
 n=int(input())
-m=n+1
+t2=n+1
+s=[]
 while 1:
-    if prime(m):
-        if palin(m):
-            print(m)
+    if palin(t2):
+        if prime(t2):
+            print(t2)
             break
-    m+=1
-        
+    t2+=1
+
