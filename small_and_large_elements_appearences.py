@@ -1,7 +1,10 @@
-n=input()
-n=n.split(" ")
-m="".join(n)
-m=str(m)
-a=min(m)
-b=max(m)
-print(a,m.count(a),b,m.count(b))
+m=input()
+n=""
+for i in m:
+    if i!=" ":
+        n+=i
+x=max(n)
+y=min(n)
+a=n.count(x)
+b=n.count(y)
+print(y,b,x,a)
