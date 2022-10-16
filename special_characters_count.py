@@ -1,7 +1,8 @@
 n=input()
-n=n.lower()
 c=0
+#print(n)
 for i in n:
-    if i not in "abcdefghijklmnopqrstuvwxyz1234567890 ":
+    if i not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 ":
         c+=1
+        #print(i)
 print(c)
