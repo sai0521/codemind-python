@@ -1,9 +1,16 @@
+def palin(x):
+    y=x
+    z=x[::-1]
+    if y==z:
+        return 1
+    else:
+        return 0
+
 n=input()
-m=n.lower()
-m=m.split()
+n=n.lower()
+n=n.split(" ")
 c=0
-for i in m:
-    j=i[::-1]
-    if i==j:
+for i in n:
+    if palin(i):
         c+=1
 print(c)
