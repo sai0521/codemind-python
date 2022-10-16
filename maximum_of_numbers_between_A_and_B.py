@@ -1,10 +1,9 @@
 n=int(input())
 l=list(map(int,input().split()))
-m=l[::-1]
-fl=0
 a,b=map(int,input().split())
+fl=0
 for i in range(b,a-1,-1):
-    if i in m:
+    if i in l:
         print(i)
         fl=1
         break
