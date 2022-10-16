@@ -1,8 +1,9 @@
 n=input()
 n=n.lower()
-m=""
+s=[]
 for i in n:
-    if n.count(i)==1 and i!=" ":
-        m+=i
-m="".join(sorted(m))
-print(m)
+    if i!=" " and n.count(i)==1:
+        s.append(i)
+s.sort()
+for i in s:
+    print(i,end="")
