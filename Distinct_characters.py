@@ -2,7 +2,7 @@ n=input()
 n=n.lower()
 s=[]
 for i in n:
-    if i!=" " and n.count(i)==1:
+    if i not in s and i!=" ":
         s.append(i)
 s.sort()
 for i in s:
