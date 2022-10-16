@@ -1,8 +1,7 @@
 n=input()
 n=n.lower()
-m=""
+s=[]
 for i in n:
-    if i  not in m and i!=" ":
-        m+=i
-
-print(len(m))
+    if i not in s and i!=" ":
+        s.append(i)
+print(len(s))
