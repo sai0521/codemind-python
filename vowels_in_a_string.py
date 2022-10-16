@@ -1,15 +1,7 @@
 n=input()
 m=input()
-a=0
-flg=0
-for i in n:
-    if m==i:
-        a=n.index(i)
-        flg=1
-        break
-if flg==0:
-    print("False")
-else:
+if m in n:
     print("True")
-    print(a)
-    
+    print(n.index(m))
+else:
+    print("False")
